@@ -1,7 +1,9 @@
-/* -------  General Styles ------- */
-
 body {
   font-family: "Lato", sans-serif;
+}
+.paragraph{
+  align-items: center
+  margin: auto 0
 }
 
 h2 {
@@ -31,14 +33,14 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width:100%
 }
 
 /* ---  Groups & Items --- */
 
 .group {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .item {
@@ -48,6 +50,12 @@ main img {
 
 .item-double {
   flex: 2;
+}
+
+.container {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column
 }
 
 /* -------  Navigation ------- */
@@ -62,6 +70,15 @@ header {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
 }
 
 header nav ul li {
@@ -83,10 +100,16 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  flex-direction: column
 }
 
 form label {
   font-weight: bold;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
 }
 
 form select,
@@ -101,7 +124,7 @@ form button {
   color: #fff;
   font-size: 24px;
   padding: 15px;
-  width: 100%;
+  ;
 }
 
 /* -------  Footer ------- */
@@ -115,5 +138,108 @@ footer p {
   text-align: center;
   padding: 20px;
 }
-
+.grid {
+  
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+}
 /* -------  Media Query ------- */
+
+@media (min-width: 480px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .paragraph{
+  align-items: center;
+  margin: auto 0
+}
+.p2{
+  flex: 1;
+  padding-right: 20px;
+  margin: auto 0;
+  
+}
+.picture{
+  flex: 1
+}
+
+
+
+
+.grid{
+  flex-direction:row;
+ 
+}
+.grid div{
+  width:50%
+
+}
+.grid img{
+  width:80%
+}
+  .column img{
+    width: 20%;
+    padding: 5px;
+
+  }
+
+  .last{
+    flex-direction: row;
+    display:flex;
+
+    
+  }
+
+  
+
+  .button{
+    width: 100px
+  }
+
+  .column{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around
+  }
+
+  .container{
+    flex-direction: row;
+    
+  }
+
+  .logo {
+    margin: 14 px 0 14px 20px;
+    padding-top: 0;
+    font-size: 38px
+  }
+
+  header nav ul {
+    align-items: center;
+  }
+
+  .group {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+  }
+
+  form div {
+    flex-direction: column;
+  }
+
+  
+
+  form select,
+  form input {
+    margin-bottom: 0px;
+  }
+}
