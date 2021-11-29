@@ -68,7 +68,7 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 4em;
   color: #fff;
 }
 
@@ -124,6 +124,7 @@ form button {
   color: #fff;
   font-size: 24px;
   padding: 15px;
+  margin: 0.5em
   ;
 }
 
