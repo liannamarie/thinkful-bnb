@@ -101,6 +101,7 @@ form {
   border: 2px solid #ff385c;
   padding: 10px;
   flex-direction: column
+  flex-wrap: wrap;
 }
 
 form label {
