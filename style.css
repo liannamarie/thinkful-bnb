@@ -116,7 +116,7 @@ form div {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 100px;
 }
 
 form button {
